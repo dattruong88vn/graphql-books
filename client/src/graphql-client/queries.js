@@ -28,4 +28,13 @@ const getBookDetail = gql`
   }
 `;
 
-export { getBooks, getBookDetail };
+const getAuthors = gql`
+  query getAuthors {
+    authors {
+      id
+      name
+    }
+  }
+`;
+
+export { getBooks, getBookDetail, getAuthors };
